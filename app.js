@@ -87,12 +87,22 @@ abtn3.addEventListener("click", function () {
 });
 
 // -------------------4-------------------
+let item4 = ""
+let n_count4 = 0
 
-count4 = document.getElementById("count4");
-rbtn4 = document.getElementById("rbtn4");
-abtn4 = document.getElementById("abtn4");
-let item4 = "";
-let n_count4 = 0;
+let count4 = document.getElementById("count4");
+let rbtn4 = document.getElementById("rbtn4");
+let abtn4 = document.getElementById("abtn4");
+abtn4.addEventListener("click", function () {
+    count4.innerText = n_count4 += 1;
+    count4.style.display = "inline-block";
+    item4 = "PIZZA/50000/" + count4.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item4 = "PIZZA/50000/" + count4.innerText;
+
+
+});
 rbtn4.addEventListener("click", function () {
     if (n_count4 > 0) {
         count4.innerText = n_count4 -= 1;
@@ -102,23 +112,24 @@ rbtn4.addEventListener("click", function () {
     item4 = "PIZZA/50000/" + count4.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-});
 
 
-abtn4.addEventListener("click", function () {
-    count4.innerText = n_count4 += 1;
-    count4.style.display = "inline-block";
-    item4 = "PIZZA/50000/" + count4.innerText;
-    tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
 });
 //-------------5-------------
+let item5 = ""
+let n_count5 = 0
+let count5 = document.getElementById("count5");
+let rbtn5 = document.getElementById("rbtn5");
+let abtn5 = document.getElementById("abtn5");
+abtn5.addEventListener("click", function () {
+    count5.innerText = n_count5 += 1;
+    count5.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item5 = "donar/30000/" + count5.innerText;
 
-count5 = document.getElementById("count5");
-rbtn5 = document.getElementById("rbtn5");
-abtn5 = document.getElementById("abtn5");
-let item5 = "";
-let n_count5 = 0;
+
+});
 rbtn5.addEventListener("click", function () {
     if (n_count5 > 0) {
         count5.innerText = n_count5 -= 1;
@@ -130,36 +141,28 @@ rbtn5.addEventListener("click", function () {
     tg.MainButton.show();
 });
 
+//-------------6-------------
+let item6 = ""
+let n_count6 = 0
+let count6 = document.getElementById("count6");
+let rbtn6 = document.getElementById("rbtn6");
+let abtn6 = document.getElementById("abtn6");
 
-abtn5.addEventListener("click", function () {
-    count5.innerText = n_count5 += 1;
-    count5.style.display = "inline-block";
-    item5 = "donar/30000/" + count2.innerText;
+rbtn6.addEventListener("click", function () {
+    count6.innerText = n_count6 += 1;
+    count6.style.display = "inline-block";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
+    item6 = "hot_dog/15000/" + count6.innerText;
+
 });
 
-//-------------6-------------
-
-count6 = document.getElementById("count6");
-rbtn6 = document.getElementById("rbtn6");
-abtn6 = document.getElementById("abtn6");
-let item6 = "";
-let n_count6 = 0;
 rbtn6.addEventListener("click", function () {
     if (n_count6 > 0) {
         count6.innerText = n_count6 -= 1;
     }
 
-    count6.style.display = "inline-block";
-    item6 = "hot_dog/15000/" + count6.innerText;
-    tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
-
-});
-rbtn6.addEventListener("click", function () {
-    count6.innerText = n_count6 += 1;
-    count6.style.display = "inline-block";
+    count6.style.display = "inl+ine-block";
     item6 = "hot_dog/15000/" + count6.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();

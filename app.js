@@ -168,6 +168,6 @@ rbtn6.addEventListener("click", function () {
     tg.MainButton.show();
 });
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item6 + "|"
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|"
     tg.sendData(data);
 });

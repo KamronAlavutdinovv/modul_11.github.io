@@ -130,7 +130,7 @@ rbtn4.addEventListener("click", function () {
     item5 = "donar/30000/" + count5.innerText;
 
     tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
+    tg. MainButton.show();
 });
 
 //-------------6-------------

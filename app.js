@@ -108,7 +108,7 @@ rbtn5 = document.getElementById("rbtn5");
 abtn5 = document.getElementById("abtn5");
 let item5 = "";
 let n_count5 = 0;
-rbtn4.addEventListener("click", function () {
+rbtn5.addEventListener("click", function () {
         count5.innerText = n_count5 -= 1;
         count5.style.display = "inline-block";
         item5 = "donar/30000/" + count5.innerText;
@@ -127,8 +127,7 @@ let n_count6 = 0;
 rbtn6.addEventListener("click", function () {
         count6.innerText = n_count6 -= 1;
         count6.style.display = "inline-block";
-        item6 = "donar/30000/" + count6.innerText;
-
+        item6 = "donar/15000/" + count6.innerText;
         tg.MainButton.setText("Оплата");
         tg.MainButton.show();
 });
@@ -136,6 +135,6 @@ rbtn6.addEventListener("click", function () {
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|"
     tg.sendData(data);
 });

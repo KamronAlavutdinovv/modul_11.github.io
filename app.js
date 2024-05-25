@@ -126,8 +126,8 @@ rbtn4.addEventListener("click", function () {
         count5.innerText = n_count5 -= 1;
     }
 
-    count4.style.display = "inline-block";
-    item4 = "donar/30000/" + count5.innerText;
+    count5.style.display = "inline-block";
+    item5 = "donar/30000/" + count5.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();

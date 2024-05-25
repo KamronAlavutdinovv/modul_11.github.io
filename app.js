@@ -94,26 +94,13 @@ abtn4 = document.getElementById("abtn4");
 let item4 = "";
 let n_count4 = 0;
 rbtn4.addEventListener("click", function () {
-    if (n_count4 > 0) {
         count4.innerText = n_count4 -= 1;
-    }
-
-    count4.style.display = "inline-block";
-    item4 = "PIZZA/50000/" + count4.innerText;
-
-    tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
+        count4.style.display = "inline-block";
+        item4 = "PIZZA/50000/" + count4.innerText;
+        tg.MainButton.setText("Оплата");
+        tg.MainButton.show();
 });
 
-
-abtn4.addEventListener("click", function () {
-    count4.innerText = n_count4 += 1;
-    count4.style.display = "inline-block";
-    item4 = "PIZZA/50000/" + count4.innerText;
-
-    tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
-});
 //-------------5-------------
 
 count5 = document.getElementById("count5");
@@ -122,15 +109,12 @@ abtn5 = document.getElementById("abtn5");
 let item5 = "";
 let n_count5 = 0;
 rbtn4.addEventListener("click", function () {
-    if (n_count5 > 0) {
         count5.innerText = n_count5 -= 1;
-    }
+        count5.style.display = "inline-block";
+        item5 = "donar/30000/" + count5.innerText;
 
-    count5.style.display = "inline-block";
-    item5 = "donar/30000/" + count5.innerText;
-
-    tg.MainButton.setText("Оплата");
-    tg. MainButton.show();
+        tg.MainButton.setText("Оплата");
+        tg. MainButton.show();
 });
 
 //-------------6-------------
@@ -141,15 +125,12 @@ abtn6 = document.getElementById("abtn6");
 let item6 = "";
 let n_count6 = 0;
 rbtn6.addEventListener("click", function () {
-    if (n_count6 > 0) {
         count6.innerText = n_count6 -= 1;
-    }
+        count6.style.display = "inline-block";
+        item6 = "donar/30000/" + count6.innerText;
 
-    count6.style.display = "inline-block";
-    item6 = "donar/30000/" + count6.innerText;
-
-    tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
+        tg.MainButton.setText("Оплата");
+        tg.MainButton.show();
 });
 
 

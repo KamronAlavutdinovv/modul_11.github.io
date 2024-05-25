@@ -116,6 +116,33 @@ abtn4.addEventListener("click", function () {
 });
 
 
+count5 = document.getElementById("count5");
+rbtn5 = document.getElementById("rbtn5");
+abtn5 = document.getElementById("abtn5");
+let item5 = "";
+let n_count5 = 0;
+rbtn4.addEventListener("click", function () {
+    if (n_count5 > 0) {
+        count4.innerText = n_count5 -= 1;
+    }
+
+    count4.style.display = "inline-block";
+    item4 = "donar/30000/" + count4.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+
+abtn4.addEventListener("click", function () {
+    count5.innerText = n_count5 += 1;
+    count4.style.display = "inline-block";
+    item4 = "PIZZA/50000/" + count4.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
     data = item1 + "|" + item2 + "|" + item3 + "|" + item4
     tg.sendData(data);

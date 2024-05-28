@@ -444,7 +444,7 @@ abtn18.addEventListener("click", function () {
     count18.style.display = "inline-block";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-    item18 = "Mujskoy Kapriz/21000/" + count18.innerText;
+    item18 = "mujskoy kapriz/21000/" + count18.innerText;
 
 });
 
@@ -454,9 +454,10 @@ rbtn18.addEventListener("click", function () {
     }
 
     count18.style.display = "inl+ine-block";
-    item18 = "Mujskoy kapriz/21000/" + count18.innerText;
+    item18 = "mujskoy kapriz/21000/" + count18.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
+});
 
 //-------------19-------------
 let item19 = ""
@@ -484,7 +485,8 @@ rbtn19.addEventListener("click", function () {
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item7 + "|" + item8 + "|" + item9 + "|" + item10 + "|" + item11 + "|" + item12 + "|" + item13 + "|" + item14 + "|" + item15 + "|" + item16 + "|" + item17 + "|" + item18 + "|" + item19 + "|"
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item7 + "|" + item8 + "|" + item9 + "|" + item10 + "|" + item11 + "|" + item12 + "|" + item13 + "|" + item14 + "|" + item15 + "|" + item16 + "|" + item17 + "|" + item18 + "|" + item19
     tg.sendData(data);
 });

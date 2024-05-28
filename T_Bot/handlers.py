@@ -1,8 +1,8 @@
 import os
 from aiogram import Dispatcher, F, Bot
-from aiogram.filters import CommandStart, Command
+from aiogram.filters import CommandStart
 from aiogram.types import Message, LabeledPrice, PreCheckoutQuery
-from Keyboards import app_kb, buy_ikb
+from keyboards import app_kb
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,15 +16,7 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(msg: Message):
-    await msg.answer("Здраствуйте привествуем нашем ресторане Atomix", reply_markup=app_kb)
-
-
-
-
-
-@dp.pre_checkout_query()
-async def pre_checkout_query(checkout_query: PreCheckoutQuery):
-    await bot.answer_pre_checkout_query(checkout_query.id, ok=True)
+    await msg.answer(f"Men Oqtepa Lavash yetkazib berish xizmati botiman!,\n Я бот службы доставки Oqtepa Lavash!, I am Oqtepa Lavash delivery service bot!", reply_markup=app_kb)
 
 
 @dp.message(F.func(lambda msg: msg.web_app_data.data if msg.web_app_data else None))
@@ -51,15 +43,10 @@ async def get_btn(msg: Message):
         provider_token=PROVIDER_TOKEN,
         currency="UZS",
         payload="Ichki malumot",
-        prices=[LabeledPrice(label=f"{product['title']}({product['quantity']})", amount=(product["quantity"] * product["price"]) * 100) for
-                product in
-                products.values()],
-        max_tip_amount=5000000,
-        suggested_tip_amounts=[500000, 1000000, 1500000],
-        need_name=True,
-        need_phone_number=True,
-        need_shipping_address=True
-    )
+        prices=[LabeledPrice(label=f"{product["title"]}({product["quantity"]})",
+                             amount=(product["price"] * product["quantity"]) * 100)
+                for product in products.values()],)
+
 
 @dp.pre_checkout_query()
 async def pre_checkout(query: PreCheckoutQuery):
@@ -68,5 +55,4 @@ async def pre_checkout(query: PreCheckoutQuery):
 
 @dp.message(F.func(lambda msg: msg.successful_payment if msg.successful_payment else None))
 async def successful_payment(msg: Message):
-    print(msg.successful_payment)
-    await msg.answer("Ваш заказ принят. Администратор свяжется с вами.")
+    await msg.answer("To'lov uchun raxmat!")

@@ -1,8 +1,8 @@
 import os
 from aiogram import Dispatcher, F, Bot
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, LabeledPrice, PreCheckoutQuery
-from keyboards import app_kb
+from Keyboards import app_kb, buy_ikb
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,7 +16,15 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(msg: Message):
-    await msg.answer("Salom", reply_markup=app_kb)
+    await msg.answer("Здраствуйте привествуем нашем ресторане Atomix", reply_markup=app_kb)
+
+
+
+
+
+@dp.pre_checkout_query()
+async def pre_checkout_query(checkout_query: PreCheckoutQuery):
+    await bot.answer_pre_checkout_query(checkout_query.id, ok=True)
 
 
 @dp.message(F.func(lambda msg: msg.web_app_data.data if msg.web_app_data else None))
@@ -43,10 +51,15 @@ async def get_btn(msg: Message):
         provider_token=PROVIDER_TOKEN,
         currency="UZS",
         payload="Ichki malumot",
-        prices=[LabeledPrice(label=f"{product["title"]}({product["quantity"]})",
-                             amount=(product["price"] * product["quantity"]) * 100)
-                for product in products.values()],)
-
+        prices=[LabeledPrice(label=f"{product['title']}({product['quantity']})", amount=(product["quantity"] * product["price"]) * 100) for
+                product in
+                products.values()],
+        max_tip_amount=5000000,
+        suggested_tip_amounts=[500000, 1000000, 1500000],
+        need_name=True,
+        need_phone_number=True,
+        need_shipping_address=True
+    )
 
 @dp.pre_checkout_query()
 async def pre_checkout(query: PreCheckoutQuery):
@@ -55,4 +68,5 @@ async def pre_checkout(query: PreCheckoutQuery):
 
 @dp.message(F.func(lambda msg: msg.successful_payment if msg.successful_payment else None))
 async def successful_payment(msg: Message):
-    await msg.answer("To'lov uchun raxmat!")
+    print(msg.successful_payment)
+    await msg.answer("Ваш заказ принят. Администратор свяжется с вами.")

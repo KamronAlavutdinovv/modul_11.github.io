@@ -459,34 +459,346 @@ rbtn18.addEventListener("click", function () {
     tg.MainButton.show();
 });
 
-//-------------19-------------
-let item19 = ""
-let n_count19 = 0
-let count19 = document.getElementById("count19");
-let rbtn19 = document.getElementById("rbtn19");
-let abtn19 = document.getElementById("abtn19");
+//-------------20-------------
+let item20 = ""
+let n_count20 = 0
+let count20 = document.getElementById("count120");
+let rbtn20 = document.getElementById("rbtn20");
+let abtn20 = document.getElementById("abtn20");
 
-abtn19.addEventListener("click", function () {
-    count19.innerText = n_count19 += 1;
-    count19.style.display = "inline-block";
+abtn20.addEventListener("click", function () {
+    count20.innerText = n_count20 += 1;
+    count20.style.display = "inline-block";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-    item19 = "Sezar/20000/" + count19.innerText;
+    item20 = "Chizkeyk/14000/" + count20.innerText;
 
 });
 
-rbtn19.addEventListener("click", function () {
-    if (n_count19 > 0) {
-        count19.innerText = n_count19 -= 1;
+rbtn20.addEventListener("click", function () {
+    if (n_count20 > 0) {
+        count1920.innerText = n_count20 -= 1;
     }
 
-    count19.style.display = "inl+ine-block";
-    item19 = "Sezar/20000/" + count19.innerText;
+    count20.style.display = "inl+ine-block";
+    item20 = "Chizkeyk/14000/" + count20.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+let item21 = ""
+let n_count21 = 0
+let count21 = document.getElementById("count21");
+let rbtn21 = document.getElementById("rbtn21");
+let abtn21 = document.getElementById("abtn11");
+
+abtn21.addEventListener("click", function () {
+    count21.innerText = n_count21 += 1;
+    count21.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item121 = "Assalli tort/14000/" + count21.innerText;
+
+});
+
+rbtn21.addEventListener("click", function () {
+    if (n_count21 > 0) {
+        count21.innerText = n_count21 -= 1;
+    }
+
+    count21.style.display = "inl+ine-block";
+    item21 = "Assalli tort/14000/" + count21.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+let item22 = ""
+let n_count22 = 0
+let count22 = document.getElementById("count22");
+let rbtn22 = document.getElementById("rbtn22");
+let abtn22 = document.getElementById("abtn22");
+
+abtn22.addEventListener("click", function () {
+    count22.innerText = n_count22 += 1;
+    count22.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item22 = "Olchali tort/14000/" + count22.innerText;
+
+});
+
+rbtn22.addEventListener("click", function () {
+    if (n_count22 > 0) {
+        count22.innerText = n_count22 -= 1;
+    }
+
+    count22.style.display = "inl+ine-block";
+    item22 = "Olchali tort/14000/" + count22.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+let item23 = ""
+let n_count23 = 0
+let count23 = document.getElementById("count23");
+let rbtn23 = document.getElementById("rbtn23");
+let abtn23 = document.getElementById("abtn23");
+
+abtn23.addEventListener("click", function () {
+    count23.innerText = n_count23 += 1;
+    count23.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item23 = "asarti pitsa/78000/" + count23.innerText;
+
+});
+
+rbtn23.addEventListener("click", function () {
+    if (n_count23 > 0) {
+        count23.innerText = n_count23 -= 1;
+    }
+
+    count23.style.display = "inl+ine-block";
+    item23 = "asarti pitsa/78000/" + count23.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+
+let item24 = ""
+let n_count24 = 0
+let count24 = document.getElementById("count24");
+let rbtn24 = document.getElementById("rbtn24");
+let abtn24 = document.getElementById("abtn24");
+
+abtn24.addEventListener("click", function () {
+    count24.innerText = n_count24 += 1;
+    count24.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item24 = "pepperonni pitasa/65000/" + count24.innerText;
+
+});
+
+rbtn24.addEventListener("click", function () {
+    if (n_count24 > 0) {
+        count24.innerText = n_count24 -= 1;
+    }
+
+    count24.style.display = "inl+ine-block";
+    item24 = "pepperonni pitsa/65000/" + count24.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________1___________________
+let item25 = ""
+let n_count25 = 0
+let count25 = document.getElementById("count25");
+let rbtn25 = document.getElementById("rbtn25");
+let abtn25 = document.getElementById("abtn25");
+
+abtn25.addEventListener("click", function () {
+    count25.innerText = n_count25 += 1;
+    count25.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item25 = "Qoziqorinli pitsa/65000/" + count25.innerText;
+
+});
+
+rbtn25.addEventListener("click", function () {
+    if (n_count25 > 0) {
+        count25.innerText = n_count25 -= 1;
+    }
+
+    count25.style.display = "inl+ine-block";
+    item25 = "qoziqorili pitsa/65000/" + count25.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________2___________________
+let item26 = ""
+let n_count26 = 0
+let count26 = document.getElementById("count26");
+let rbtn26 = document.getElementById("rbtn26");
+let abtn26 = document.getElementById("abtn26");
+
+abtn26.addEventListener("click", function () {
+    count26.innerText = n_count26 += 1;
+    count26.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item26 = "qahva /7000/" + count26.innerText;
+
+});
+
+rbtn26.addEventListener("click", function () {
+    if (n_count26 > 0) {
+        count26.innerText = n_count26 -= 1;
+    }
+
+    count26.style.display = "inl+ine-block";
+    item26 = "qahva/7000/" + count26.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________3___________________
+let item27 = ""
+let n_count27 = 0
+let count27 = document.getElementById("count27");
+let rbtn27 = document.getElementById("rbtn27");
+let abtn27 = document.getElementById("abtn27");
+
+abtn27.addEventListener("click", function () {
+    count27.innerText = n_count27 += 1;
+    count27.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item27 = "kok choy/65000/" + count27.innerText;
+
+});
+
+rbtn27.addEventListener("click", function () {
+    if (n_count27 > 0) {
+        count27.innerText = n_count27 -= 1;
+    }
+
+    count27.style.display = "inl+ine-block";
+    item27 = "kok choy/65000/" + count27.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________4___________________
+let item28 = ""
+let n_count28 = 0
+let count28 = document.getElementById("count28");
+let rbtn28 = document.getElementById("rbtn28");
+let abtn28 = document.getElementById("abtn28");
+
+abtn28.addEventListener("click", function () {
+    count28.innerText = n_count28 += 1;
+    count28.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item28 = "limonli choy/5000/" + count28.innerText;
+
+});
+
+rbtn28.addEventListener("click", function () {
+    if (n_count28 > 0) {
+        count28.innerText = n_count28 -= 1;
+    }
+
+    count28.style.display = "inl+ine-block";
+    item28 = "Limonli choy/5000/" + count28.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________5___________________
+let item29 = ""
+let n_count29 = 0
+let count29 = document.getElementById("count29");
+let rbtn29 = document.getElementById("rbtn29");
+let abtn29 = document.getElementById("abtn29");
+
+abtn29.addEventListener("click", function () {
+    count29.innerText = n_count29 += 1;
+    count29.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item29 = "Fri/13000/" + count29.innerText;
+
+});
+
+rbtn29.addEventListener("click", function () {
+    if (n_count29 > 0) {
+        count29.innerText = n_count29 -= 1;
+    }
+
+    count29.style.display = "inl+ine-block";
+    item29 = "Fri/13000/" + count29.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________6___________________
+let item31 = ""
+let n_count31 = 0
+let count31 = document.getElementById("count31");
+let rbtn31 = document.getElementById("rbtn31");
+let abtn31 = document.getElementById("abtn31");
+
+abtn31.addEventListener("click", function () {
+    count31.innerText = n_count31 += 1;
+    count31.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item31 = "mayonez/2000/" + count31.innerText;
+
+});
+
+rbtn31.addEventListener("click", function () {
+    if (n_count31 > 0) {
+        count31.innerText = n_count31 -= 1;
+    }
+
+    count31.style.display = "inl+ine-block";
+    item31 = "mayonez/2000/" + count31.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________7___________________
+let item32 = ""
+let n_count32 = 0
+let count32 = document.getElementById("count32");
+let rbtn32 = document.getElementById("rbtn32");
+let abtn32 = document.getElementById("abtn32");
+
+abtn32.addEventListener("click", function () {
+    count32.innerText = n_count24 += 1;
+    count32.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item32 = "pepsi/15000/" + count32.innerText;
+
+});
+
+rbtn32.addEventListener("click", function () {
+    if (n_count32 > 0) {
+        count32.innerText = n_count32 -= 1;
+    }
+
+    count32.style.display = "inl+ine-block";
+    item32 = "pepsi/15000/" + count32.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+//__________________________8___________________
+let item33 = ""
+let n_count33 = 0
+let count33 = document.getElementById("count33");
+let rbtn33 = document.getElementById("rbtn33");
+let abtn33 = document.getElementById("abtn33");
+
+abtn33.addEventListener("click", function () {
+    count33.innerText = n_count33 += 1;
+    count33.style.display = "inline-block";
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+    item33 = "lipton/6000/" + count33.innerText;
+
+});
+
+rbtn33.addEventListener("click", function () {
+    if (n_count33 > 0) {
+        count33.innerText = n_count33 -= 1;
+    }
+
+    count33.style.display = "inl+ine-block";
+    item33 = "lipton/6000/" + count33.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item7 + "|" + item8 + "|" + item9 + "|" + item10 + "|" + item11 + "|" + item12 + "|" + item13 + "|" + item14 + "|" + item15 + "|" + item16 + "|" + item17 + "|" + item18 + "|" + item19
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item7 + "|" + item8 + "|" + item9 + "|" + item10 + "|" + item11 + "|" + item12 + "|" + item13 + "|" + item14 + "|" + item15 + "|" + item16 + "|" + item17 + "|" + item18 + "|"  + item20 + "|" + item21 + "|" + item22 + "|" + item23 + "|" + item24 + "|" + item25 + "|" + item26 + "|" + item27 + "|" + item28 + "|" + item29 +  "|" + item31  +  "|" + item32
     tg.sendData(data);
 });

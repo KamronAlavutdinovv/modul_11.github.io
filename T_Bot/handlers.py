@@ -16,7 +16,7 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start(msg: Message):
-    await msg.answer(f"Men Oqtepa Lavash yetkazib berish xizmati botiman!,\n Я бот службы доставки Oqtepa Lavash!, I am Oqtepa Lavash delivery service bot!", reply_markup=app_kb)
+    await msg.answer(f"Men Oqtepa Lavash yetkazib berish xizmati botiman!,\n Я бот службы доставки Oqtepa Lavash!\n I am Oqtepa Lavash delivery service bot!", reply_markup=app_kb)
 
 
 @dp.message(F.func(lambda msg: msg.web_app_data.data if msg.web_app_data else None))
